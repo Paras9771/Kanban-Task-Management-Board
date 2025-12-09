@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+}
+
+/*------------------------------------ Top Heading Design --------------------------------------------*/
+.top {
+    width: 1050px;
+    height: 700px;
+    border: 2px solid rgb(223, 219, 219);
+    margin-left: 250px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading h3{
+    color: white;
+    margin-left: 70px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+/*-------------------------------------- Button Design ------------------------------------------------ */
+.heading button {
+    color: white;
+    margin-right: 60px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgb(213, 30, 30);
+}
+
+/*--------------------------------------- Button Hover Design ------------------------------------------ */
+.heading button:hover {
+    background-color: rgb(238, 93, 93);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*-----------------------------------------Design 3 boxes ---------------------------------------------- */
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+/*---------------------------------------- Coloring 3 boxes ---------------------------------------------- */
+.common-border {
+    border: 1px solid white;
+    width: 300px;
+    height: 560px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;   
+    align-items: stretch;     
+    background-color: rgb(41, 40, 40);
+    padding: 10px;         
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.common-border h2 {
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.common-border h3 {
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+/*-------------------------------------------todo list task design ---------------------------- */
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 12px 15px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(80, 80, 80);
+    font-family: system-ui, sans-serif;
+    gap: 10px; 
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background-color: rgb(255, 80, 80);
+}
+
+/* -------------------------------------------Move Button--------------------------------------*/
+.move-btn {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.complete-btn {
+    background-color: #28a745;     
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 8px;
+    transition: 0.3s ease;
+}
+
+.complete-btn:hover {
+    background-color: #34d058;      
+    transform: scale(1.05);         
+}
+
+
+/* ======================= RESPONSIVE PART ======================= */
+
+/* 🟡 Tablet & small laptop (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .top {
+        width: 90%;
+        height: auto;
+        margin: 60px auto;
+    }
+
+    .box {
+        gap: 15px;
+    }
+
+    .common-border {
+        height: auto;
+    }
+}
+
+/* 🟠 Mobile & small tablets (max-width: 768px) */
+@media (max-width: 768px) {
+
+    .top {
+        width: 95%;
+        height: auto;
+        margin: 30px auto;
+    }
+
+    .heading {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .heading h3 {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .heading button {
+        margin-right: 0;
+        margin-top: 0;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .common-border {
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+    }
+
+    .task {
+        margin: 8px 5px;
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+
+/* 🔴 Very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+
+    .top {
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .heading {
+        padding: 15px;
+    }
+
+    .heading h3 {
+        font-size: 16px;
+    }
+
+    .heading button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .common-border h2 {
+        font-size: 16px;
+    }
+
+    .common-border h3 {
+        font-size: 18px;
+    }
+
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .delete-btn,
+    .move-btn,
+    .complete-btn {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+}
+
+.task {
+    display: flex;
+    flex-direction: column;   /* pehle text + meta, neeche buttons */
+    align-items: flex-start;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 12px 15px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(80, 80, 80);
+    font-family: system-ui, sans-serif;
+    gap: 6px; 
+}
+
+.task-buttons {
+    display: flex;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.task-meta {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+/* Priority colors */
+.priority-low {
+    color: #6fdc82;
+}
+
+.priority-medium {
+    color: #ffcc66;
+}
+
+.priority-high {
+    color: #ff7b72;
+}
+
+/* Edit button */
+.edit-btn {
+    background-color: #4b8bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.edit-btn:hover {
+    background-color: #76a5ff;
+}

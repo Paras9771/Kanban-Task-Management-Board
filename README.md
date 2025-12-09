@@ -96,8 +96,8 @@ Local Storage	Saving Tasks Offline
 │── index.js
 └── README.md
 
-## Live Demo Link
-live demo
+## 🔴 Live Demo  
+👉 (https://paras9771.github.io/Kanban-Task-Management-Board/)
 
 ## 📸 Screenshots (Add These After Upload)
 ![App Screenshot](1.png)
